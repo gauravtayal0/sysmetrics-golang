@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/moonfrog/sysutil/controller"
+	"github.com/gauravtayal0/sysutil/controller"
 )
 
 const (

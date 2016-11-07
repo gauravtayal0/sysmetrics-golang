@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"github.com/moonfrog/sysutil/services"
+	"github.com/gauravtayal0/sysutil/services"
 	"net/http"
 )
 

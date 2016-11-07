@@ -3,8 +3,7 @@ package services
 import (
 	"encoding/json"
 	"fmt"
-	Const "github.com/moonfrog/badger/api/constants"
-	"github.com/moonfrog/badger/logs"
+	Const "github.com/gauravtayal0/sysutil/constants"
 	"net/http"
 	"time"
 )
@@ -32,7 +31,6 @@ func WriteResponse(w http.ResponseWriter, resp interface{}) {
 
 func WriteErrorResponse(w http.ResponseWriter, statusCode int, err error) {
 	timestamp := fmt.Sprintf(" (%v) ", time.Now().UnixNano())
-	logs.Error("API_ERROR : " + timestamp + " : " + err.Error())
 	http.Error(w, http.StatusText(statusCode)+timestamp, statusCode)
 	return
 }

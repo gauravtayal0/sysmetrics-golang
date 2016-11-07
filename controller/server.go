@@ -2,8 +2,8 @@ package controller
 
 import (
 	"fmt"
+	"github.com/gauravtayal0/sysutil/services"
 	"github.com/gorilla/mux"
-	"github.com/moonfrog/sysutil/services"
 	"net/http"
 )
 
